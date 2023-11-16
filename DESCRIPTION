@@ -1,11 +1,11 @@
 Type: Package
 Package: rllama
-Title: Access and Analyze Dedillama Data
+Title: Access and Analyze DeFiLlama Data
 Version: 0.2.0
 Author: Alexey Ivanov
 Maintainer: Alexey Ivanov <twor.2r@gmail.com>
 Description: Provides an interface to access and analyze data from the
-    Dedillama. This package simplifies the process of fetching and
+    DeFiLlama. This package simplifies the process of fetching and
     manipulating DeFiLlama data for further analysis and visualization.
 License: MIT + file LICENSE
 URL: https://github.com/AlexTwoR/rllama
