@@ -18,7 +18,7 @@ get_defillama_chain_tvl = function() {
   content = httr::content( res, type = 'application/json' )
 
   # Convert the list to a data.table,
-  tvl_chains  = rbindlist( content, fill = T )[ order( -tvl ) ]
+  tvl_chains  = rbindlist( content, fill = TRUE )[ order( -"tvl" ) ]
 
   # Reordering and renaming
   setcolorder( tvl_chains, c( "name", "tokenSymbol", "tvl", "gecko_id", "cmcId", "chainId" ) )

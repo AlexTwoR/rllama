@@ -28,7 +28,7 @@ get_defillama_protocol_tvl = function() {
   })
 
   # Combining the list into a single data.table
-  tvl_protocols = rbindlist(tvl_protocols)[ order( -tvl ) ]
+  tvl_protocols = rbindlist(tvl_protocols)[ order( -"tvl" ) ]
 
   tvl_protocols[]
 

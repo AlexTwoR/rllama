@@ -1,15 +1,18 @@
-Package: rllama
 Type: Package
-Title: Access and Analyze DeFiLlama TVL Data
+Package: rllama
+Title: Access and Analyze Dedillama Data
 Version: 0.2.0
 Author: Alexey Ivanov
-Maintainer: The package maintainer <twor.2r@gmail.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Maintainer: Alexey Ivanov <twor.2r@gmail.com>
+Description: Provides an interface to access and analyze data from the
+    Dedillama. This package simplifies the process of fetching and
+    manipulating DeFiLlama data for further analysis and visualization.
 License: MIT + file LICENSE
+URL: https://github.com/AlexTwoR/rllama
+Imports: 
+    data.table,
+    httr
 Encoding: UTF-8
+Language: en-US
 LazyData: true
 RoxygenNote: 7.2.3
-Imports: 
-    httr,
-    data.table
