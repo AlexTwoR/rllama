@@ -1,7 +1,7 @@
 Package: rllama
 Type: Package
 Title: Access and Analyze DeFiLlama TVL Data
-Version: 0.1.0
+Version: 0.2.0
 Author: Alexey Ivanov
 Maintainer: The package maintainer <twor.2r@gmail.net>
 Description: More about what it does (maybe more than one line)
