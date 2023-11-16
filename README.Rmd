@@ -1,0 +1,31 @@
+---
+title: "rllama"
+output: md_document
+---
+
+# rllama
+
+`rllama` is an R package designed to access and analyze data from the DeFiLlama API. This package simplifies the process of fetching and manipulating DeFiLlama data, making it easier for users to perform analyses and create visualizations.
+
+## Installation
+
+You can install the development version of `rllama` from GitHub with:
+
+```{r}
+# install.packages("devtools")
+devtools::install_github("AlexTwoR/rllama")
+```
+
+Usage
+
+Here is a basic example of how to use rllama to retrieve TVL data:
+
+```{r}
+
+library(rllama)
+
+# Example usage
+# This will fetch and display TVL data
+protocol_tvl = get_defillama_protocol_tvl()
+head( protocol_tvl )
+```
