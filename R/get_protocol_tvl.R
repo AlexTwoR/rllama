@@ -1,4 +1,4 @@
-#' Fetch TVL Data from API
+#' TVL Data from API
 #'
 #' This function retrieves Total Value Locked (TVL) data for various protocols
 #' from a specified API and formats it into a data.table for analysis.
@@ -8,7 +8,7 @@
 #' @examples
 #' tvl = get_protocol_tvl()
 
-get_protocol_tvl <- function() {
+get_protocol_tvl = function() {
 
   # API request
   request = 'https://api.llama.fi/protocols'
