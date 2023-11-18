@@ -7,12 +7,12 @@
 get_defillama_protocol_tvl()
 }
 \value{
-A data.table containing TVL data with columns: symbol, tvl, slug, name, chain, and category.
+A `data.table` containing TVL data with columns: symbol, tvl, slug, name, chain, and category.
 The data is sorted by TVL in descending order.
 }
 \description{
 This function retrieves Total Value Locked (TVL) data for various protocols
-from a specified API and formats it into a data.table for analysis.
+from a specified API and formats it into a table for analysis.
 }
 \examples{
 protocol_tvl = get_defillama_protocol_tvl()

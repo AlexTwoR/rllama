@@ -3,7 +3,7 @@
 #' This function retrieves Total Value Locked (TVL) data for various chains
 #' from a specified API and formats it into a data.table for analysis.
 #'
-#' @return A data.table containing the TVL data with columns: name, symbol, tvl, gecko_id, cmcId, and chainId.
+#' @return A `data.table` containing the TVL data with columns: name, symbol, tvl, gecko_id, cmcId, and chainId.
 #' The data is sorted by TVL in descending order.
 #' @export
 #' @examples

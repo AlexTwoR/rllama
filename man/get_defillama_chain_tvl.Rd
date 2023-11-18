@@ -7,7 +7,7 @@
 get_defillama_chain_tvl()
 }
 \value{
-A data.table containing the TVL data with columns: name, symbol, tvl, gecko_id, cmcId, and chainId.
+A `data.table` containing the TVL data with columns: name, symbol, tvl, gecko_id, cmcId, and chainId.
 The data is sorted by TVL in descending order.
 }
 \description{

@@ -1,9 +1,9 @@
 #' Protocol TVL Data
 #'
 #' This function retrieves Total Value Locked (TVL) data for various protocols
-#' from a specified API and formats it into a data.table for analysis.
+#' from a specified API and formats it into a table for analysis.
 #'
-#' @return A data.table containing TVL data with columns: symbol, tvl, slug, name, chain, and category.
+#' @return A `data.table` containing TVL data with columns: symbol, tvl, slug, name, chain, and category.
 #' The data is sorted by TVL in descending order.
 #' @export
 #' @examples
