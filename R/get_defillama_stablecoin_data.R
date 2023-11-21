@@ -11,7 +11,8 @@
 
 get_defillama_stablecoin_data = function() {
 
-  circulating = market_cap = price = NULL # due to NSE notes in R CMD check
+  # due to NSE notes in R CMD check
+  circulating = market_cap = price = id = NULL
 
 
   url = "https://stablecoins.llama.fi/stablecoins?includePrices=true"
@@ -45,6 +46,7 @@ get_defillama_stablecoin_data = function() {
 
   # Market Cap calculation
   stablecoin_dt[ , circulating := as.numeric( circulating ) ]
+  stablecoin_dt[ , id := as.numeric( id ) ]
   stablecoin_dt[ , market_cap := circulating * price ]
   setorder( stablecoin_dt, -"market_cap", na.last = TRUE )
 

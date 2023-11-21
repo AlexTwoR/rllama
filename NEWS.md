@@ -1,3 +1,8 @@
+# rllama 0.3.1
+
+* Minor fix `get_defillama_stablecoin_data()` function.
+
+---
 # rllama 0.3.0
 
 * Added `get_defillama_stablecoin_data()` function.
