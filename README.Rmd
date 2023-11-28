@@ -30,6 +30,6 @@ library( rllama )
 
 # Example usage
 # This will fetch and display TVL data
-protocol_tvl = get_defillama_protocol_tvl()
-head( protocol_tvl )
+chain_tvl = get_defillama_chain_tvl()
+head( chain_tvl )
 ```

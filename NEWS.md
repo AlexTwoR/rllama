@@ -1,3 +1,12 @@
+# rllama 0.4.3
+
+* Added `get_defillama_chain_hist_tvl()` function.
+* Added `get_defillama_protocol_hist_tvl()` function.
+* Added `get_defillama_stablecoin_hist_tvl()` function.
+* Various minor bug fixes and performance improvements.
+
+---
+
 # rllama 0.3.2
 
 * Fix bug in `get_defillama_protocol_tvl()` function.
