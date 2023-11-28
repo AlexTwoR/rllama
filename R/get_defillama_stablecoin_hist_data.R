@@ -9,8 +9,10 @@
 #' The table is sorted by date.
 #' @export
 #' @examples
-#' stablecoin_hist_data = get_defillama_stablecoin_hist_data( 1 )
+#' \donttest{
+#' stablecoin_hist_data = get_defillama_stablecoin_hist_data( 5 )
 #' head( stablecoin_hist_data )
+#' }
 
 get_defillama_stablecoin_hist_data = function( stablecoin_id ) {
 
