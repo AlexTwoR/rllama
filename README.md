@@ -5,9 +5,9 @@ DeFiLlama API. This package simplifies the process of fetching and
 manipulating DeFiLlama data, making it easier for users to perform
 analyses and create visualizations.
 
-[![](https://www.r-pkg.org/badges/version/rllama)](https://cran.r-project.org/web/packages/rllama/index.html)
+[![](https://www.r-pkg.org/badges/version/rllama)](https://cran.r-project.org/package=rllama)
 [![](https://cranlogs.r-pkg.org/badges/rllama)](https://cran.r-project.org/package=rllama)
-[![](https://cranlogs.r-pkg.org/badges/grand-total/rllama)](https://cranlogs.r-pkg.org/badges/grand-total/rllama)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/rllama)](https://cran.r-project.org/package=rllama)
 
 ## Installation
 
@@ -16,7 +16,7 @@ You can install the development version of `rllama` from GitHub with:
     # install.packages("devtools")
     devtools::install_github("AlexTwoR/rllama")
 
-    ## Skipping install of 'rllama' from a github remote, the SHA1 (38112ee9) has not changed since last install.
+    ## Skipping install of 'rllama' from a github remote, the SHA1 (b231ef9f) has not changed since last install.
     ##   Use `force = TRUE` to force installation
 
 Usage

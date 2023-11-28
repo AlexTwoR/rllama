@@ -7,9 +7,9 @@ output: md_document
 
 `rllama` is an R package designed to access and analyze data from the DeFiLlama API. This package simplifies the process of fetching and manipulating DeFiLlama data, making it easier for users to perform analyses and create visualizations.
 
-[![](https://www.r-pkg.org/badges/version/rllama)](https://cran.r-project.org/web/packages/rllama/index.html)
+[![](https://www.r-pkg.org/badges/version/rllama)](https://cran.r-project.org/package=rllama)
 [![](https://cranlogs.r-pkg.org/badges/rllama)](https://cran.r-project.org/package=rllama)
-[![](https://cranlogs.r-pkg.org/badges/grand-total/rllama)](https://cranlogs.r-pkg.org/badges/grand-total/rllama)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/rllama)](https://cran.r-project.org/package=rllama)
 
 ## Installation
 
