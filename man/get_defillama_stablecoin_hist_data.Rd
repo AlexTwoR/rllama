@@ -12,7 +12,7 @@ from the result of the \code{\link{get_defillama_stablecoin_data}} function.}
 }
 \value{
 A `data.table` object containing historical data of the specified stablecoin.
-The table is sorted by market capitalization.
+The table is sorted by date.
 }
 \description{
 Retrieves stablecoin data, including details like name, symbol, price, and market cap.

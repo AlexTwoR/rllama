@@ -6,7 +6,7 @@
 #' from the result of the \code{\link{get_defillama_stablecoin_data}} function.
 #'
 #' @return A `data.table` object containing historical data of the specified stablecoin.
-#' The table is sorted by market capitalization.
+#' The table is sorted by date.
 #' @export
 #' @examples
 #' stablecoin_hist_data = get_defillama_stablecoin_hist_data( 1 )
@@ -15,7 +15,7 @@
 get_defillama_stablecoin_hist_data = function( stablecoin_id ) {
 
   # due to NSE notes in R CMD check
-  symbol = name = NULL
+  symbol = name = circulating = NULL
 
   # Validate the input
   if (!is.numeric(stablecoin_id) || stablecoin_id <= 0) {
@@ -38,7 +38,10 @@ get_defillama_stablecoin_hist_data = function( stablecoin_id ) {
   setcolorder( stablecoin_hist_data, c( 'symbol', 'name'  ) )
 
   # Convert 'date' column to POSIXct datetime
-  stablecoin_hist_data[, date := as.POSIXct(date, format = "%Y-%m-%dT%H:%M:%S", tz = "UTC")]
+  stablecoin_hist_data[, date := as.Date( as.POSIXct(date,
+                                                     format = "%Y-%m-%dT%H:%M:%S",
+                                                     tz = "UTC") )]
+  stablecoin_hist_data[ , circulating := as.numeric( circulating ) ]
 
   stablecoin_hist_data[]
 }

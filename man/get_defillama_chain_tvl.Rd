@@ -11,7 +11,7 @@ A `data.table` containing the TVL data with columns: name, symbol, tvl, gecko_id
 The data is sorted by TVL in descending order.
 }
 \description{
-This function retrieves Total Value Locked (TVL) data for various chains
+This function retrieves TVL data for various chains
 from a specified API and formats it into a data.table for analysis.
 }
 \examples{
