@@ -26,7 +26,7 @@ Here is a basic example of how to use rllama to retrieve TVL data:
 
 ```{r}
 
-library(rllama)
+library( rllama )
 
 # Example usage
 # This will fetch and display TVL data

@@ -4,7 +4,11 @@
 \alias{get_defillama_protocol_tvl}
 \title{Protocol TVL Data}
 \usage{
-get_defillama_protocol_tvl()
+get_defillama_protocol_tvl(is_cex_include = F)
+}
+\arguments{
+\item{is_cex_include}{Logical; if FALSE (default), data for CEX
+will be excluded from the results. Set to TRUE to include CEX data.}
 }
 \value{
 A `data.table` containing TVL data with columns: symbol, tvl, slug, name, chain, and category.

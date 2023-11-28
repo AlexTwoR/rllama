@@ -18,14 +18,14 @@ You can install the development version of `rllama` from GitHub with:
 
     ## Downloading GitHub repo AlexTwoR/rllama@HEAD
 
-    ## ── R CMD build ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-    ##      checking for file ‘/private/var/folders/8n/w2sqh3pd6ljfmx107gyl5xwr0000gn/T/RtmpNl4JHN/remotesdedc4781fa86/AlexTwoR-rllama-4aba582/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/8n/w2sqh3pd6ljfmx107gyl5xwr0000gn/T/RtmpNl4JHN/remotesdedc4781fa86/AlexTwoR-rllama-4aba582/DESCRIPTION’
+    ## ── R CMD build ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ##      checking for file ‘/private/var/folders/8n/w2sqh3pd6ljfmx107gyl5xwr0000gn/T/RtmpSQ2ubC/remotes919d3969a3d1/AlexTwoR-rllama-764a67a/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/8n/w2sqh3pd6ljfmx107gyl5xwr0000gn/T/RtmpSQ2ubC/remotes919d3969a3d1/AlexTwoR-rllama-764a67a/DESCRIPTION’
     ##   ─  preparing ‘rllama’:
-    ##    checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
+    ##      checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
     ##   ─  checking for LF line-endings in source and make files and shell scripts
     ##   ─  checking for empty or unneeded directories
     ##    Omitted ‘LazyData’ from DESCRIPTION
-    ##   ─  building ‘rllama_0.3.0.tar.gz’
+    ##   ─  building ‘rllama_0.3.1.tar.gz’
     ##      
     ## 
 
@@ -36,12 +36,17 @@ Usage
 
 Here is a basic example of how to use rllama to retrieve TVL data:
 
-    library(rllama)
+    library( rllama )
 
     # Example usage
     # This will fetch and display TVL data
     protocol_tvl = get_defillama_protocol_tvl()
     head( protocol_tvl )
 
-    ##           name symbol        slug         tvl       chain category
-    ## 1: Binance CEX      - binance-cex 69882033516 Multi-Chain      CEX
+    ##                        name symbol                     slug         tvl       chain       category
+    ## 1:                     Lido    LDO                     lido 18809394757 Multi-Chain Liquid Staking
+    ## 2:                     WBTC      -                     wbtc  5972843354 Multi-Chain         Bridge
+    ## 3:                 JustLend    JST                 justlend  5927403156        Tron        Lending
+    ## 4: Polygon Bridge & Staking  MATIC polygon-bridge-&-staking  5810058082     Polygon          Chain
+    ## 5:          Arbitrum Bridge    ARB          arbitrum-bridge  5598512290    Ethereum          Chain
+    ## 6:                 MakerDAO    MKR                 makerdao  5498271437    Ethereum            CDP

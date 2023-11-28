@@ -1,3 +1,9 @@
+# rllama 0.3.2
+
+* Fix bug in `get_defillama_protocol_tvl()` function.
+
+---
+
 # rllama 0.3.1
 
 * Minor fix `get_defillama_stablecoin_data()` function.
