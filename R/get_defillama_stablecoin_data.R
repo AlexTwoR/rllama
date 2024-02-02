@@ -1,7 +1,7 @@
 #' Stablecoins Data
 #'
 #' Retrieves stablecoin data, including details like name, symbol, price, and market cap.
-#' The data is returned as a sorted table.
+#' The data is returned as a sorted table by market cap.
 #'
 #' @return A `data.table` with stablecoin information, sorted by market capitalization.
 #' @export
@@ -48,6 +48,7 @@ get_defillama_stablecoin_data = function() {
   stablecoin_dt[ , circulating := as.numeric( circulating ) ]
   stablecoin_dt[ , id := as.numeric( id ) ]
   stablecoin_dt[ , market_cap := circulating * price ]
+
   setorder( stablecoin_dt, -"market_cap", na.last = TRUE )
 
   stablecoin_dt[]

@@ -1,3 +1,7 @@
+# rllama 0.4.4 _2024-02-02_
+
+- Fix bug in `get_defillama_protocol_tvl()` function.
+
 # rllama 0.4.3 _2023-11-28_
 
 - Added `get_defillama_chain_hist_tvl()` function.

@@ -33,7 +33,7 @@ get_defillama_protocol_tvl = function( is_cex_include = F ) {
   })
 
   # Combining the list into a single data.table
-  tvl_protocols = rbindlist(tvl_protocols)[ order( -tvl ) ]
+  tvl_protocols = rbindlist(tvl_protocols, fill = TRUE )[ order( -tvl ) ]
 
   if( is_cex_include == FALSE )
     tvl_protocols = tvl_protocols[ category != "CEX" ]

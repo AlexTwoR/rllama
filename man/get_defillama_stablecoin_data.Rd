@@ -11,7 +11,7 @@ A `data.table` with stablecoin information, sorted by market capitalization.
 }
 \description{
 Retrieves stablecoin data, including details like name, symbol, price, and market cap.
-The data is returned as a sorted table.
+The data is returned as a sorted table by market cap.
 }
 \examples{
 stablecoin_data = get_defillama_stablecoin_data()
